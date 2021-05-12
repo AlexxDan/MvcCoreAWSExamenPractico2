@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MvcCoreAWSExamenPractico2.Helper;
 using MvcCoreAWSExamenPractico2.Services;
 
 namespace MvcCoreAWSExamenPractico2
@@ -28,8 +27,7 @@ namespace MvcCoreAWSExamenPractico2
         {
 
             services.AddAWSService<IAmazonS3>();
-            services.AddTransient<PathProvider>();
-            services.AddTransient<UploadHelper>();
+            
             services.AddTransient<ServicesDynamoDB>();
             services.AddTransient<ServicesS3>();
 

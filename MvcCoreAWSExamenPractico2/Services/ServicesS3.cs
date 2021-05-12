@@ -18,7 +18,7 @@ namespace MvcCoreAWSExamenPractico2.Services
         public ServicesS3(IAmazonS3 amazonS3, IConfiguration configuration)
         {
             this.awsCliente = amazonS3;
-            this.bucketName = configuration["AWSS3:BucktName"];
+            this.bucketName = configuration["AWS:BucketName"];
         }
 
         public async Task<bool> UploadFile(Stream stream, String filename)

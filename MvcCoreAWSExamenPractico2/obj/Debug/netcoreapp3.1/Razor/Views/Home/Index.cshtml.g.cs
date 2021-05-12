@@ -19,8 +19,15 @@ using MvcCoreAWSExamenPractico2;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\AlumnoMCSD\Documents\AWS\Examen2\MvcCoreAWSExamenPractico2\MvcCoreAWSExamenPractico2\Views\_ViewImports.cshtml"
+using MvcCoreAWSExamenPractico2.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b8ff7f4dcc2abc91830343ecc591930e28faec50", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9201455992ba114f06c78c7c6a1e6aec0e484bf7", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7965777eca19730aae9695031beebd3129e4ca57", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -36,7 +36,17 @@
         </dd>
     </dl>
 </div>
+@if (Model.Foto != null) { 
 <div>
-    @Html.ActionLink("Edit", "Edit", new { iduser = item.IdUsuario }) |
+    <h3>@Model.Foto[0].Titulo</h3>
+    <ul>
+        @foreach (var foto in Model.Foto) { 
+        <li><img src="https://examen-bucket-ans.s3.amazonaws.com/@foto.Imagen" width="200" height="200" /></li>
+        }
+    </ul>
+</div>
+}
+<div>
+    @Html.ActionLink("Update", "Update", new { iduser = Model.IdUsuario }) |
     <a asp-action="Index">Back to List</a>
 </div>

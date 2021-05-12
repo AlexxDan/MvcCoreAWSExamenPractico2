@@ -131,3 +131,5 @@ C:\Users\AlumnoMCSD\Documents\AWS\Examen2\MvcCoreAWSExamenPractico2\MvcCoreAWSEx
 C:\Users\AlumnoMCSD\Documents\AWS\Examen2\MvcCoreAWSExamenPractico2\MvcCoreAWSExamenPractico2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\AlumnoMCSD\Documents\AWS\Examen2\MvcCoreAWSExamenPractico2\MvcCoreAWSExamenPractico2\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Index.cshtml.g.cs
 C:\Users\AlumnoMCSD\Documents\AWS\Examen2\MvcCoreAWSExamenPractico2\MvcCoreAWSExamenPractico2\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Details.cshtml.g.cs
+C:\Users\AlumnoMCSD\Documents\AWS\Examen2\MvcCoreAWSExamenPractico2\MvcCoreAWSExamenPractico2\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Create.cshtml.g.cs
+C:\Users\AlumnoMCSD\Documents\AWS\Examen2\MvcCoreAWSExamenPractico2\MvcCoreAWSExamenPractico2\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Update.cshtml.g.cs

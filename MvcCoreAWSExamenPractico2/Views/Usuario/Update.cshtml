@@ -1,20 +1,21 @@
-﻿@model MvcCoreAWSExamenPractico2.Models.Usuario
+﻿@model Usuario
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Update";
+    List<Fotos> fotos = ViewData["FOTO"] as List<Fotos>;
 }
 
-<h1>Create</h1>
+<h1>Update</h1>
 
 <h4>Usuario</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create" enctype="multipart/form-data" >
+        <form asp-action="Update" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="IdUsuario" class="control-label"></label>
-                <input asp-for="IdUsuario" class="form-control" />
+                <input asp-for="IdUsuario" class="form-control" readonly />
                 <span asp-validation-for="IdUsuario" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -32,14 +33,24 @@
                 <input asp-for="Fecha" class="form-control" />
                 <span asp-validation-for="Fecha" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
             <div>
-                ¿Desea guardar Imagenes?<input type="checkbox" 
-                     value="yes"  name="iamgenagree" class="form-control" />
-            </div>
+                <div>
+                    ¿Desea elminar las imagenes Imagenes?<input type="checkbox"
+                      value="delete" name="accion" class="form-control" /> <br />
+                    <ul class="list-group">
+                        @foreach (Fotos foto in fotos)
+                         {
+                        <li class="list-group-item">
+                            <label>@foto.Imagen</label>
+                            <input type="checkbox" name="fotoseliminar" value="@foto.Imagen" class="form-control" />
+                        </li>
+                        }
+                    </ul>
+                </div>
                 <div>
                     <label>Titulo</label>
-                    <input type="text" name="titulo" class="form-control">
+                    <input type="text" name="titulo" value="@fotos[0].Titulo" class="form-control">
                 </div>
                 <div>
                     <label>Imagenes</label>
@@ -47,7 +58,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
